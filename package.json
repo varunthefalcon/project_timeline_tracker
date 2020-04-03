@@ -1,0 +1,65 @@
+{
+  "name": "profacet",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "SET PORT=9000 && react-scripts start",
+    "build": "react-scripts build",
+    "check-size": "bundlesize"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "formik": "^2.1.4",
+    "node-sass": "^4.13.1",
+    "nprogress": "^0.2.0",
+    "prop-types": "^15.7.2",
+    "rc-drawer": "0.4.11",
+    "react": "^16.13.1",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^5.2.1",
+    "react-joyride": "^2.2.1",
+    "react-placeholder": "^4.0.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "react-select": "^3.1.0",
+    "reactstrap": "^8.4.1",
+    "redux": "^4.0.5",
+    "sweetalert2": "^9.10.7",
+    "thunk": "^0.0.1",
+    "yup": "^0.28.3"
+  },
+  "devDependencies": {
+    "bundlesize": "^0.18.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "bundlesize": [
+    {
+      "path": "build/**/main*.js",
+      "maxSize": "16 kB"
+    },
+    {
+      "path": "build/**/*.png",
+      "maxSize": "30 kB"
+    }
+  ]
+}
