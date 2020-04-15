@@ -27,7 +27,7 @@ const LeftAligned = () => {
             setLoading(true)
             const config = {
                 method: 'GET',
-                url: 'https://varunthefalcon.pythonanywhere.com/project/1/',
+                url: 'https://varunthefalcon.pythonanywhere.com/project/4/',
             }
             const response = await Axios(config)
             setProject(response.data)
@@ -43,7 +43,7 @@ const LeftAligned = () => {
                 ? <p>loading....</p>
                 : <Fragment>
                     <h1 onClick={handleClick} style={{ cursor: 'pointer' }}>
-                        {`${name} - ${consumedHours} / ${allocatedHours} hrs`}
+                        {`${name} - ${allocatedHours} years old - ${consumedHours}% life wasted`}
                     </h1>
                     <div className="timeline-section clearfix animated slideInUpTiny animation-duration-3">
                         {timeline.map((event, index) => <DefaultTimeLineItem key={index} data={event} />)}

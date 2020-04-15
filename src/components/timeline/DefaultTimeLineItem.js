@@ -1,5 +1,5 @@
 import React from 'react';
-import TimelinePentagon from '../../assets/images/profacet.jpg'
+import vlogo from '../../assets/images/vlogo.jpg'
 import StopwatchIcon from '../../assets/images/yellow-stopwatch.jpg'
 
 const DefaultTimeLineItem = ({ styleName, data }) => {
@@ -7,7 +7,7 @@ const DefaultTimeLineItem = ({ styleName, data }) => {
     return (
         <div className={`timeline-item ${styleName}`}>
             <div className="timeline-badge timeline-img">
-                <img src={TimelinePentagon} alt="Pentagon" title="Pentagon" />
+                <img src={vlogo} alt="Pentagon" title="Pentagon" />
             </div>
 
             <div className="timeline-panel ">
